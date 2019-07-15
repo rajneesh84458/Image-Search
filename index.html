@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<style>
+
+    body{
+        background-color: royalblue;
+    }
+
+   div{
+       width: 200px;
+       height: 200px;
+       margin: 50px;
+       border: 1px solid red;
+       background-size: 100% 100%;
+       float: left;
+       
+   }
+   button{
+       width: 100px;
+       height: 30px;
+   }
+
+   p{
+       font-family: 'calibri';
+       font-size: 20px;
+   }
+   input{
+       width: 200px;
+       height: 40px;
+       font-family: cursive;
+       font-size: 30px;
+   }
+
+   </style>
+
+<script>
+
+    function abc()
+    {
+        var a=document.getElementById("result").value;
+        var z=document.getElementById("photo");
+        var c=document.getElementById("pic");
+        var d=document.getElementById("sin");
+
+        if(a =='a')
+        {
+           z.style.backgroundImage="url(images/c.jpg)";
+           
+        }
+        else if(a=='b'){
+
+             c.style.backgroundImage="url(images/h.jpg)";
+        }
+
+              else if(a=='c')    {
+
+              d.style.backgroundImage="url(images/i.jpg)";
+              }
+        
+     else {
+             
+            
+           window.alert("You have entered invalid input");
+    
+          
+           }
+     }
+</script>
+
+<body>
+    
+<h1 align ="center">Image Search System</h1><br>
+<marquee><p>Put alphabet a ,b,c ,d and see what will happend????</p></marquee>
+<input type="text" id ="result">
+<button onclick="abc()">click here</button>
+
+<div id = "photo"> </div>
+
+<div id = "pic"> </div>
+
+<div id = "sin"> </div>
+
+</body>
+</html>
